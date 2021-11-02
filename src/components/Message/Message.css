@@ -1,0 +1,53 @@
+.message {
+    background-color: #FFFFFF;
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    margin: 16px 24px;
+    max-width: 240px;
+    padding: 8px;
+    position: relative;
+    text-align: justify;
+    text-justify: auto;
+}
+
+.message-left {
+    align-self: flex-start;
+    left: 0;
+}
+
+.message-right {
+    align-self: flex-end;
+    background-color: #FCF7C5;
+    border-color: #ccc;
+    right: 0;
+}
+
+.timestamp-left {
+    float: left;
+}
+
+.timestamp-right {
+    float: right;
+}
+
+.label-gray {
+    color: #999;
+    font-size: 0.875em;
+}
+
+/* For larger screens: */
+@media only screen and (min-width: 400px) {
+    .message {
+        max-width: 420px;
+        padding: 16px;
+    }
+
+    .message-left {
+        left: 259px;
+        max-width: 640px;
+    }
+
+    .message-right {
+        right: 244px;
+    }
+}
