@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 import './Message.css';
 
 const Message = ({ message }) => {
@@ -13,7 +14,7 @@ const Message = ({ message }) => {
             )}
             <div>{message?.message}</div>
             <br />
-            <time className={`timestamp-${message?.author === "user" ? "right" : "left"} label-gray`}>{message?.timestamp}</time>
+            <time className={`timestamp-${message?.author === "user" ? "right" : "left"} label-gray`}>{moment(Number(message?.timestamp)).format("Do MMM YYYY H:mm")}</time>
         </div>
     )
 };
