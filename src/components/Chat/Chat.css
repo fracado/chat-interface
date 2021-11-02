@@ -1,0 +1,17 @@
+.chat-container {
+    background-image: url('../../assets/images/BodyBG_small.png');
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: -60px auto;
+    overflow: auto;
+}
+
+/* For larger screens: */
+@media only screen and (min-width: 400px) {
+    .chat-container {
+        background-image: url('../../assets/images/BodyBG_large.png');
+    }
+}
