@@ -2,7 +2,7 @@
 
 This project fetches messages from an api and displays them in a chat interface, as well as allowing to send messages.
 
-This app was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can find the published app here: [Chat Interface App](https://chat-interface-app.netlify.app)
 
 ## How to start the app
 
