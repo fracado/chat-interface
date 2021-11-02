@@ -1,4 +1,5 @@
 import React from 'react';
+import './FormElements.css';
 
 const InputField = ({ id, setInputValue, inputValue, placeholder }) => {
     return (

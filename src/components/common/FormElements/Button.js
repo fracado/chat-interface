@@ -1,5 +1,5 @@
 import React from 'react';
-import './Form.css';
+import './FormElements.css';
 
 const Button = ({ type, label }) => {
     return (

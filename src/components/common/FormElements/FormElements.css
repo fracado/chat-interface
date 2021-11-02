@@ -1,0 +1,28 @@
+button {
+    background-color: #FB866E;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px;
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+}
+
+input {
+    border-color: #2D77A6;
+    border-radius: 4px;
+    border-style: solid;
+    box-sizing: border-box;
+    caret-color: #2D77A6;
+    margin: 8px;
+    padding: 12px 20px;
+    width: 60%;
+}
+
+input:focus {
+    outline-style: none;
+}
