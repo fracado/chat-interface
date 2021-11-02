@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import InputField from '../common/FormElements/InputField';
 import Button from '../common/FormElements/Button';
 import { sendMessage } from '../../helper/api';
+import './Input.css';
 
 const Input = ({ addNewMessage }) => {
     const [inputValue, setInputValue] = useState('');

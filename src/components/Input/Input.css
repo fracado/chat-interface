@@ -3,5 +3,6 @@
     bottom: 0;
     min-height: 60px;
     position: fixed;
+    text-align: center;
     width: 100%;
 }
