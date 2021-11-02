@@ -6,6 +6,7 @@ import './Chat.css';
 
 const Chat = () => {
     const [messages, setMessages] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const addNewMessage = (message) => {
         setMessages([...messages, message])
@@ -15,8 +16,17 @@ const Chat = () => {
         fetchMessages(`https://chatty.kubernetes.doodle-test.com/api/chatty/v1.0/?token=${process.env.REACT_APP_CHAT_API_TOKEN}`)
             .then((response) => {
                 setMessages(response);
+                setLoading(false);
             });
     }, []);
+
+    if (loading) {
+        return (
+            <div className="loader-container">
+                <div className="loader" aria-label="Loading..." />
+            </div>
+        )
+    }
 
     return (
         <div className="chat-container">
